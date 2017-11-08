@@ -24,6 +24,10 @@ html, body{
 	border-bottom: solid 3px #D5D4D4;
 }
 
+.requisites{
+	height: 200px;
+}
+
 .formForPay{
 	clear: right;
 }
