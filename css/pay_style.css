@@ -24,9 +24,16 @@ html, body{
 	border-bottom: solid 3px #D5D4D4;
 }
 
+.formForPay{
+	clear: right;
+}
+
 input{
 	border:none;
 	border-bottom: solid 1px #CFCFCF;
 }
 
+.company, .formForPay, .aboutCompany{
+	margin: 5px;
+}
 
