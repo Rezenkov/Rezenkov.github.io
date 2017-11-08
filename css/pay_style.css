@@ -4,6 +4,35 @@ html, body{
 	background: #E1E0E0;
 }
 
+input{
+	border:none;
+	border-bottom: solid 1px #CFCFCF;
+	color: grey;
+	padding:5px;
+	text-align: center; 
+}
+input[name='pay']{
+	padding: 5px;
+}
+
+input[name='number_card']{
+	width: 80%;
+}
+
+a{
+	display: inline-block;
+	padding: 5px;
+	text-decoration: none;
+}
+
+ul{
+	padding: 0;
+}
+
+li{
+	display: inline-block;
+}
+
 .layout{
 	max-width: 760px;
 	margin: auto;
@@ -20,11 +49,20 @@ html, body{
 	width: 200px;
 }
 
+.company, .formForPay, .aboutCompany{
+	margin: 5px;
+	padding: 10px;
+}
+
 .company{
 	border-bottom: solid 3px #D5D4D4;
 }
 
-.requisites{
+.phone{
+	color: grey;
+}
+
+.text{
 	height: 200px;
 }
 
@@ -32,12 +70,52 @@ html, body{
 	clear: right;
 }
 
-input{
-	border:none;
-	border-bottom: solid 1px #CFCFCF;
+.card{
+	margin-right: 35px;
+	float: left;
+	height: 190px;
+	width: 300px;
+	background: #EBEAEA;
+	border: solid 1px #C4C3C3;
+	border-radius: 10px;
 }
 
-.company, .formForPay, .aboutCompany{
+.card input{
+	margin: 15px;
+	background: none;
+}
+
+.card input[name='date_card']{
+	size: 5;
+}
+
+.paymentSystem{
+	float: right;
+	margin: 15px;
+}
+
+.visa{
+	height: 13px;
+	width: 40px;
+}
+
+.mastercard{
+	height: 20px;
+	width: 33px;
+}
+
+.card_requisites{
+	clear: right;
+}
+
+.payment{
 	margin: 5px;
+}
+#payCard{
+	height: 190px;
+}
+
+#request{
+	display: none;
 }
 

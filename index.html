@@ -10,24 +10,63 @@
 	<div class='layout'>
 			<div class='wrap'>
 				<div class='company' >
+					<img class='avatar' src="img/avatar.jpg"></img>
 					<div class='text'>
 						<h2>Индивидуальный предприниматель Садчикова Любовь Александровна</h2>
-						<p class='requisites'>
-							<a href="www.lubov.ru">www.lubov.ru</a>
-							<img class='avatar' src="img/avatar.jpg"></img>
-							<a href="lubov@tochka.com">lubov@tochka.com</a>
-							<a href="">Информация о компании</a>
-							<a href="">Показать реквизиты</a>
+						<p>
+							<a class='phone'>+79876543210</a>
+							<a class='site' href="www.lubov.ru">www.lubov.ru</a>
+							<a class='email' href="lubov@tochka.com">lubov@tochka.com</a>
+							<a class='info' href="">Информация о компании</a>
+							<a class='requisites' href="">Показать реквизиты</a>
 						</p>
 					</div>
 				</div>
 				<div class='formForPay'>
-					<div class='card'>
-						<input type="text" name="number_card" value="Номер карты">
-						<br>
-						<input type="text" name="date_card" value="ММ/ГГ">
-						<input type="text" name="cvc" value="CVC">
+					<ul class='navigation'>
+						<li><a href="#pay">Заплатить</a></li>
+						<li><a href="#request">Запросить платеж</a></li>
+					</ul>
+					<div id='pay'>
+						<ul class='navigation'>
+							<li><a href="#payCard">С карты любого банка</a></li>
+							<li><a href="#payFromBank">Из своего интернет-банка</a></li>
+						</ul>
+						<form id='payCard'>
+							<div class='card'>
+								<div class='paymentSystem'>
+									<img class='visa' src="img/visa.png">
+									<img class='mastercard' src="img/mastercard.png">
+								</div>
+								<div class='card_requisites'>
+									<input type="text" name="number_card" value="Номер карты" size='19'>
+									<input type="text" name="date_card" value="ММ/ГГ" size='5'>
+									<input type="text" name="cvc" value="CVC" size='3'>
+								</div>
+							</div>
+							<div class='payment'>
+								<p>
+								 Сумма
+								 <input type="text" name="sum" value='От 1000 до 75000Р'>	
+								</p>
+								<p>
+									Комментарий
+									<input type="text" name="comment" value='До 150 символов'> 
+								</p>
+								<p>
+									Ваша эл.почта
+									<input type="text" name="email_client" value='Для квитанции об оплате'>
+								</p>
+								<input type="button" name="pay" value='Заплатить'>
+							</div>
+						</form>
 					</div>	
+					<div id='request'>
+						<p>
+							Создайте платёжку, а Индивидуальный предприниматель Садчикова Любовь Александровна 
+							подпишет её у себя в интернет-банке
+						</p>
+					</div>
 				</div>
 				<div class='aboutCompany'>
 					
